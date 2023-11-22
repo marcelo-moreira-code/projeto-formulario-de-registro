@@ -9,22 +9,32 @@
 <body>
     <h1>Formulário de Cadastro</h1>
     <p>Por favor, preencha esse formulário com as informações requeridas</p>
+    <!-- O tipo email só permite e-mails com @ e um . no domínio. O tipo password oculta a entrada e avisa se o site não usa HTTPS.-->
     <form action="https://register-demo.freecodecamp.org" method="post">
         <fieldset>
-            
-            <label for="">Primeiro Nome: <input type="text"> </label>
-            <label for="">Último Nome: <input type="text"></label>
-            <label for="">E-mail: <input type="text"></label>
-            <label for="">Nova Senha: <input type="text"></label>
+            <!--Para deixar o formulário mais interativo, adicione o atributo required aos elementos input no primeiro fieldset. Agora, se você tentar enviar o formulário sem preencher os campos obrigatórios, você verá uma mensagem de erro.-->
+            <label for="primeiro-nome">Primeiro Nome: <input id="primeiro-nome" type="text" required> </label>
+            <label for="ultimo-nome">Último Nome: <input id="ultimo-nome" type="text" required></label>
+            <label for="email">E-mail: <input id="email" type="email" required></label>
+            <label for="nova-senha">Nova Senha: <input id="nova-senha" type="password" minlength="8" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
 
         <fieldset>
-
+            <legend>Tipo de Conta (obrigatório)</legend> 
+            <label for="conta-pessoal"> <input id="conta-pessoal" type="radio" name="tipo-conta" checked> Pessoal </label>
+            <label for="conta-empresarial"> <input id="conta-empresarial" type="radio" name="tipo-conta"> Empresarial </label>
         </fieldset>
 
         <fieldset>
-
+            <label for=""> <input type="file"> </label>
         </fieldset>
+
+        <label for="termos-e-condições">
+            <input id="termos-e-condições" type="checkbox" required>eu aceitos os <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">termos e as condições</a>
+        </label>
+
+        <input type="submit" value="Enviar"> <!--Para lidar com o envio do formulário, depois do último elemento fieldset, adicione um elemento input com o atributo type definido como submit e o atributo value definido como Submit.-->
     </form>
+    
 </body>
 </html>
