@@ -21,8 +21,8 @@
 
         <fieldset>
             <legend>Tipo de Conta (obrigatório)</legend> 
-            <label for="conta-pessoal"> <input id="conta-pessoal" type="radio" name="tipo-conta" checked> Pessoal </label>
-            <label for="conta-empresarial"> <input id="conta-empresarial" type="radio" name="tipo-conta"> Empresarial </label>
+            <label for="conta-pessoal"> <input id="conta-pessoal" type="radio" name="tipo-conta" class="inline" checked> Pessoal </label>
+            <label for="conta-empresarial"> <input id="conta-empresarial" type="radio" name="tipo-conta" class="inline"> Empresarial </label>
         </fieldset>
 
         <fieldset>
@@ -43,11 +43,11 @@
         </fieldset>
 
         <label for="termos-e-condições">
-            <input id="termos-e-condições" name="termos-e-condições" type="checkbox" required>eu aceitos os <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">termos e as condições</a>
+            <input id="termos-e-condições" class="inline" name="termos-e-condições" type="checkbox" required>eu aceitos os <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">termos e as condições</a>
         </label>
 
         <input type="submit" value="Enviar"> <!--Para lidar com o envio do formulário, depois do último elemento fieldset, adicione um elemento input com o atributo type definido como submit e o atributo value definido como Submit.-->
     </form>
-    
+   
 </body>
 </html>
