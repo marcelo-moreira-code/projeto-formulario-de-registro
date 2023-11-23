@@ -26,11 +26,11 @@
         </fieldset>
 
         <fieldset>
-            <label for=""> Carrege uma imagem <input type="file"> </label>
-            <label for=""> Coloque sua idade (anos) <input type="number" min="13" max="120"> </label>
-            <label for=""> 
+            <label for="imagem-perfil"> Carrege uma imagem <input id="imagem-perfil" type="file"> </label>
+            <label for="idade"> Coloque sua idade (anos) <input id="idade" type="number" min="13" max="120"> </label>
+            <label for="referencia"> 
                 Como ficou sabendo sobre nós?
-                <select name="" id="">
+                <select name="" id="referencia">
                     <option value="">(selecione uma)</option>
                     <option value="1">freeCodeCamp News</option>
                     <option value="2">freeCodeCamp YouTube Channel</option>
@@ -38,6 +38,8 @@
                     <option value="4">Outras</option>
                 </select>
             </label>
+            <!-- O placeholder aceita um valor de texto, que é exibido até que o usuário comece a digitar.-->
+            <label for="bio">Escreva uma bio: <textarea name="" id="bio" cols="30" rows="3" placeholder="Eu gosto de programar enquanto estou na praia...."></textarea></label>
         </fieldset>
 
         <label for="termos-e-condições">
