@@ -13,10 +13,10 @@
     <form action="https://register-demo.freecodecamp.org" method="post">
         <fieldset>
             <!--Para deixar o formulário mais interativo, adicione o atributo required aos elementos input no primeiro fieldset. Agora, se você tentar enviar o formulário sem preencher os campos obrigatórios, você verá uma mensagem de erro.-->
-            <label for="primeiro-nome">Primeiro Nome: <input id="primeiro-nome" type="text" required> </label>
-            <label for="ultimo-nome">Último Nome: <input id="ultimo-nome" type="text" required></label>
-            <label for="email">E-mail: <input id="email" type="email" required></label>
-            <label for="nova-senha">Nova Senha: <input id="nova-senha" type="password" minlength="8" pattern="[a-z0-5]{8,}" required></label>
+            <label for="primeiro-nome">Primeiro Nome: <input id="primeiro-nome" name="primeiro-nome" type="text" required> </label>
+            <label for="ultimo-nome">Último Nome: <input id="ultimo-nome" name="ultimo-nome" type="text" required></label>
+            <label for="email">E-mail: <input id="email" name="email" type="email" required></label>
+            <label for="nova-senha">Nova Senha: <input id="nova-senha" name="nova-senha" type="password" minlength="8" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
 
         <fieldset>
@@ -26,11 +26,11 @@
         </fieldset>
 
         <fieldset>
-            <label for="imagem-perfil"> Carrege uma imagem <input id="imagem-perfil" type="file"> </label>
-            <label for="idade"> Coloque sua idade (anos) <input id="idade" type="number" min="13" max="120"> </label>
+            <label for="imagem-perfil"> Carrege uma imagem <input id="imagem-perfil" name="imagem-perfil" type="file"> </label>
+            <label for="idade"> Coloque sua idade (anos) <input id="idade" name="idade" type="number" min="13" max="120"> </label>
             <label for="referencia"> 
                 Como ficou sabendo sobre nós?
-                <select name="" id="referencia">
+                <select name="" id="referencia" name="referencia">
                     <option value="">(selecione uma)</option>
                     <option value="1">freeCodeCamp News</option>
                     <option value="2">freeCodeCamp YouTube Channel</option>
@@ -39,11 +39,11 @@
                 </select>
             </label>
             <!-- O placeholder aceita um valor de texto, que é exibido até que o usuário comece a digitar.-->
-            <label for="bio">Escreva uma bio: <textarea name="" id="bio" cols="30" rows="3" placeholder="Eu gosto de programar enquanto estou na praia...."></textarea></label>
+            <label for="bio">Escreva uma bio: <textarea id="bio" name="bio" cols="30" rows="3" placeholder="Eu gosto de programar enquanto estou na praia...."></textarea></label>
         </fieldset>
 
         <label for="termos-e-condições">
-            <input id="termos-e-condições" type="checkbox" required>eu aceitos os <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">termos e as condições</a>
+            <input id="termos-e-condições" name="termos-e-condições" type="checkbox" required>eu aceitos os <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">termos e as condições</a>
         </label>
 
         <input type="submit" value="Enviar"> <!--Para lidar com o envio do formulário, depois do último elemento fieldset, adicione um elemento input com o atributo type definido como submit e o atributo value definido como Submit.-->
