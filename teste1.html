@@ -10,48 +10,60 @@
     <h1>Desafio do Formulário de Pesquisa</h1>
     <p>Obrigado por passar um tempo nos ajudando a melhorar a plataforma</p>
 
-    <fieldset>
-        <label for="nome">Nome <input id="nome" type="text"> </label>
-        <label for="email">Email <input id="email" type="email"> </label>
-        <label for="idade">Idade (opcional) <input id="idade" type="number"> </label>
-    </fieldset>
+    <form action="">
+        <fieldset>
+            <label for="nome">Nome <input id="nome" type="text"> </label>
+            <label for="email">Email <input id="email" type="email"> </label>
+            <label for="idade">Idade (opcional) <input id="idade" type="number"> </label>
+        </fieldset>
         
-
-    <fieldset>
-        <label for="">
-            Escolha a melhor opção que descreve perfil atual?
-            <select>
-                <option value="">Selecione o atual perfil</option>
-                <option value="">Estudante</option>
-                <option value="">Trabalho em tempo integral</option>
-                <option value="">Líder em tempo integral</option>
-                <option value="">Prefiro não dizer</option>
-                <option value="">Outro</option>
-            </select>
+        <fieldset>
+            <label for="">
+                Escolha a melhor opção que descreve perfil atual?
+                <select>
+                    <option value="">Selecione o atual perfil</option>
+                    <option value="">Estudante</option>
+                    <option value="">Trabalho em tempo integral</option>
+                    <option value="">Líder em tempo integral</option>
+                    <option value="">Prefiro não dizer</option>
+                    <option value="">Outro</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Você recomendaria a freeCodeCamp para um amigo?</legend>
+            <label for="">Definitivamente <input name="" type="radio" checked> </label>
+            <label for="">Talvez <input name="" type="radio"> </label>
+            <label for="">Não Tenho Certeza<input name="" type="radio"> </label>
+        </fieldset>
+        <fieldset>
+            <legend>Qual é a sua funcionalidade favorita no freeCodeCamp?</legend>
+            <label for="">
+                <select name="" id="">
+                    <option value="">Selecione uma opção</option>
+                    <option value="">Desafios</option>
+                    <option value="">Projetos</option>
+                    <option value="">Comunidade</option>
+                    <option value="">Código Aberto</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>O que você gostaria de ver ser melhorado? (Marque tudo o que se aplica)</legend>
+            <input type="checkbox"> Projetos Front-End<label for=""></label>
+            <input type="checkbox"> Projetos Back-End<label for=""></label>
+            <input type="checkbox"> Visualização de Dados<label for=""></label>
+            <input type="checkbox"> Desafios<label for=""></label>
+            <input type="checkbox"> Salas de ajuda do Gitter<label for=""></label>
+            <input type="checkbox"> Vídeos<label for=""></label>
+            <input type="checkbox"> Encontros na Cidade<label for=""></label>
+            <input type="checkbox"> Wiki<label for=""></label>
+            <input type="checkbox"> Fórum<label for=""></label>
+            <input type="checkbox"> Cursos Adicionais<label for=""></label>
+        </fieldset>
+        <label for=""> <legend>Quaisquer comentários ou sugestões?</legend>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
         </label>
-    </fieldset>
-
-
-    <fieldset>
-        <legend>Você recomendaria a freeCodeCamp para um amigo?</legend>
-        <label for="">Definitivamente <input name="" type="radio" checked> </label>
-        <label for="">Talvez <input name="" type="radio"> </label>
-        <label for="">Não Tenho Certeza<input name="" type="radio"> </label>
-    </fieldset>
-
-
-    <fieldset>
-        <legend>Qual é a sua funcionalidade favorita no freeCodeCamp?</legend>
-        <label for="">
-            <select name="" id="">
-                <option value="">Selecione uma opção</option>
-                <option value="">Desafios</option>
-                <option value="">Projetos</option>
-                <option value="">Comunidade</option>
-                <option value="">Código Aberto</option>
-
-            </select>
-        </label>
-    </fieldset>
+    </form>
 </body>
 </html>
