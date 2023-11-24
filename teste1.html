@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1 id="principal">Desafio do Formulário de Pesquisa</h1>
-    <p id="p-um">Obrigado por passar um tempo nos ajudando a melhorar a plataforma</p>
+    <h1 id="titulo">Desafio do Formulário de Pesquisa</h1>
+    <p id="descricao">Obrigado por passar um tempo nos ajudando a melhorar a plataforma</p>
 
     <form action="" id="formulario-pesquisa">
         <fieldset>
             <label for="nome" id="nome-label">Nome <input id="nome" name="nome" type="text" placeholder="Preencha este campo" required> </label>
             <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder="Preencha este campo" required> </label>
             <label for="idade" id="idade-label">Idade (opcional) <input id="idade" name="idade" type="number" min="10" max="99" placeholder="O valor deve ser entre 10 e 99" required> </label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Escolha a melhor opção que descreve perfil atual?</legend>
+
+
+            
             <label for="perfil">
-                
+                <legend>Escolha a melhor opção que descreve perfil atual?</legend>
                 <select name="perfil" id="perfil">
                     <option value="">Selecione  atual perfil</option>
                     <option value="1">Estudante</option>
@@ -31,12 +30,14 @@
                 </select>
             </label>
         </fieldset>
+        
         <fieldset>
             <legend>Você recomendaria a freeCodeCamp para um amigo?</legend>
-            <label for="">Definitivamente <input name="" type="radio" checked> </label>
-            <label for="">Talvez <input name="" type="radio"> </label>
-            <label for="">Não Tenho Certeza<input name="" type="radio"> </label>
+            <label for="definitivamente" ><input id="definitivamente" name="escolha" type="radio" class="inline" checked>Definitivamente </label>
+            <label for="talvez"><input id="talvez" value="talvez" name="escolha" type="radio" class="inline">Talvez  </label>
+            <label for="improvavel"><input id="improvavel" name="escolha" value="improvavel" type="radio" class="inline">Não Tenho Certeza </label>
         </fieldset>
+
         <fieldset>
             <legend>Qual é a sua funcionalidade favorita no freeCodeCamp?</legend>
             <label for="funcionalidade">
@@ -49,19 +50,21 @@
                 </select>
             </label>
         </fieldset>
+
         <fieldset>
             <legend>O que você gostaria de ver ser melhorado? (Marque tudo o que se aplica)</legend>
-            <input type="checkbox"> Projetos Front-End<label for=""></label>
-            <input type="checkbox"> Projetos Back-End<label for=""></label>
-            <input type="checkbox"> Visualização de Dados<label for=""></label>
-            <input type="checkbox"> Desafios<label for=""></label>
-            <input type="checkbox"> Salas de ajuda do Gitter<label for=""></label>
-            <input type="checkbox"> Vídeos<label for=""></label>
-            <input type="checkbox"> Encontros na Cidade<label for=""></label>
-            <input type="checkbox"> Wiki<label for=""></label>
-            <input type="checkbox"> Fórum<label for=""></label>
-            <input type="checkbox"> Cursos Adicionais<label for=""></label>
+            <input type="checkbox" class="inline"> Projetos Front-End<label for=""></label>
+            <input type="checkbox" class="inline" value="back-end"> Projetos Back-End<label for="back-end"></label>
+            <input type="checkbox" class="inline"> Visualização de Dados<label for=""></label>
+            <input type="checkbox" class="inline"> Desafios<label for=""></label>
+            <input type="checkbox" class="inline"> Salas de ajuda do Gitter<label for=""></label>
+            <input type="checkbox" class="inline"> Vídeos<label for=""></label>
+            <input type="checkbox" class="inline"> Encontros na Cidade<label for=""></label>
+            <input type="checkbox" class="inline"> Wiki<label for=""></label>
+            <input type="checkbox" class="inline"> Fórum<label for=""></label>
+            <input type="checkbox" class="inline"> Cursos Adicionais<label for=""></label>
         </fieldset>
+
         <label for=""> <legend>Quaisquer comentários ou sugestões?</legend>
             <textarea name="" id="" cols="30" rows="10" placeholder="Escreva seu comentário aqui..."></textarea>
         </label>
